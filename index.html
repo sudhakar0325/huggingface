@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Text Summarizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>📝 AI Text Summarizer</h2>
+    <textarea id="inputText" placeholder="Paste your text here..." rows="10"></textarea>
+
+    <select id="model">
+      <option value="facebook/bart-large-cnn">BART Large (Default)</option>
+      <option value="t5-small">T5 Small</option>
+    </select>
+
+    <button onclick="summarizeText()">Summarize</button>
+
+    <h4>🔍 Summary</h4>
+    <div id="outputBox">Your summary will appear here...</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
